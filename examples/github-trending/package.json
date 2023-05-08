@@ -10,7 +10,7 @@
     "dev": "npm run watch"
   },
   "dependencies": {
-    "chrome-sidebar": "^0.1.2",
+    "chrome_sidebar_3": "file:../../dist",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
