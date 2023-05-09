@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Frame } from 'chrome-sidebar'
+import { Frame } from 'chrome_sidebar_3'
 import { url } from './settings'
 
 if (Frame.isReady()) {

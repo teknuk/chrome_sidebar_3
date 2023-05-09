@@ -1,4 +1,4 @@
-import { attachHeadersListener } from 'chrome-sidebar'
+import { attachHeadersListener } from 'chrome_sidebar_3'
 import { hosts, iframeHosts } from './settings'
 
 console.log('Chrome Github Trending Sidebar Extension Registered')
