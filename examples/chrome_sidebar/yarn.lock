@@ -1256,16 +1256,8 @@
   optionalDependencies:
     "fsevents" "^1.0.0"
 
-"chrome-sidebar@^0.1.2":
-  "integrity" "sha512-d03EFKgFAFLHtYpdx5HfBbHLHUGg5jkdmTK+TY7WgsX4OyW4getJwchedQr7/qD5uAQjBSZlZ+bxELxc57UiNQ=="
-  "resolved" "https://registry.npmjs.org/chrome-sidebar/-/chrome-sidebar-0.1.2.tgz"
-  "version" "0.1.2"
-  dependencies:
-    "classnames" "^2.2.5"
-    "debug" "^2.6.6"
-    "glamor" "^2.20.25"
-    "react" "^15.5.4"
-    "react-dom" "^15.5.4"
+"chrome-sidebar@file:../../dist":
+  "resolved" "file:../../dist"
 
 "cipher-base@^1.0.0", "cipher-base@^1.0.1", "cipher-base@^1.0.3":
   "integrity" "sha512-Ci/6dw5oG7K7Eqvpo3xbK3WYpZdT8RjSUn87DZHkKShDVbB9iIxCBKNXdm7IlpV+gwt7uDwZDhV0mmrRSkcOsA=="
@@ -1273,11 +1265,6 @@
   "version" "1.0.3"
   dependencies:
     "inherits" "^2.0.1"
-
-"classnames@^2.2.5":
-  "integrity" "sha512-DTt3GhOUDKhh4ONwIJW4lmhyotQmV2LjNlGK/J2hkwUcqcbKkCLAdJPtxQnxnlc7SR3f1CEXCyMmc7WLUsWbNA=="
-  "resolved" "https://registry.npmjs.org/classnames/-/classnames-2.2.5.tgz"
-  "version" "2.2.5"
 
 "cliui@^2.1.0":
   "integrity" "sha512-GIOYRizG+TGoc7Wgc1LiOTLare95R3mzKgoln+Q/lE4ceiYH19gUpl0l0Ffq4lJDEf3FxujMe6IBfOCs7pfqNA=="
@@ -1414,7 +1401,7 @@
   "resolved" "https://registry.npmjs.org/date-now/-/date-now-0.1.4.tgz"
   "version" "0.1.4"
 
-"debug@^2.1.1", "debug@^2.2.0", "debug@^2.6.6":
+"debug@^2.1.1", "debug@^2.2.0":
   "integrity" "sha512-ED4LYbzHt4IiPgIVjfUFfsvI5Et133QsXvQuMWw0ygFaPdvE8aeX6nfI+5ZVfyMuP8vZBk9Lv3yn6MPvGnzO9Q=="
   "resolved" "https://registry.npmjs.org/debug/-/debug-2.6.6.tgz"
   "version" "2.6.6"
@@ -1552,7 +1539,7 @@
   dependencies:
     "is-extglob" "^1.0.0"
 
-"fbjs@^0.8.8", "fbjs@^0.8.9":
+"fbjs@^0.8.9":
   "integrity" "sha512-SBiP6XPiWIlX1tE5mvU/UeUFoqzJgbf+ezkl0M8D2xk4urDb+2uyjjGB10HAPluLboUqqVHtgUwwyuWakUfMgQ=="
   "resolved" "https://registry.npmjs.org/fbjs/-/fbjs-0.8.12.tgz"
   "version" "0.8.12"
@@ -1638,16 +1625,6 @@
   "integrity" "sha512-A6srK23btrgde1mUYEzplvRPjdwkZXrHsIRNRZnG5p8ZEJHG+QB8ENw16MtH7NWiyDGiSF2giAlJpcls/y2wxQ=="
   "resolved" "https://registry.npmjs.org/get-caller-file/-/get-caller-file-1.0.2.tgz"
   "version" "1.0.2"
-
-"glamor@^2.20.25":
-  "integrity" "sha512-uzj/rBGh/43l190DtW1VszU9yoVl6D4ijLL1YX2HPKB1RplGasd2tNgKEGdKM5Mzob5kik2aEusSl2ynCnZp4Q=="
-  "resolved" "https://registry.npmjs.org/glamor/-/glamor-2.20.25.tgz"
-  "version" "2.20.25"
-  dependencies:
-    "babel-runtime" "^6.18.0"
-    "fbjs" "^0.8.8"
-    "object-assign" "^4.1.0"
-    "prop-types" "^15.5.8"
 
 "glob-base@^0.3.0":
   "integrity" "sha512-ab1S1g1EbO7YzauaJLkgLp7DZVAqj9M/dvKlTt8DkXA2tiOIcSMrlVI2J1RZyB5iJVccEscjGn+kpOG9788MHA=="
@@ -2354,7 +2331,7 @@
   dependencies:
     "asap" "~2.0.3"
 
-"prop-types@^15.5.7", "prop-types@^15.5.8", "prop-types@~15.5.7":
+"prop-types@^15.5.7", "prop-types@~15.5.7":
   "integrity" "sha512-vCFzoUFaZkVNeFkhK1KbSq4cn97GDrpfBt9K2qLkGnPAEFhEv3M61Lk5t+B7c0QfMLWo0fPkowk/4SuXerh26Q=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.5.10.tgz"
   "version" "15.5.10"
