@@ -4232,10 +4232,10 @@
     "source-list-map" "^2.0.0"
     "source-map" "~0.6.1"
 
-"webpack@^1.9 || ^2 || ^2.1.0-beta || ^2.2.0-rc || ^3.0.0", "webpack@^3.11.0", "webpack@2 || 3 || 4":
-  "integrity" "sha512-3kOFejWqj5ISpJk4Qj/V7w98h9Vl52wak3CLiw/cDOfbVTq7FeoZ0SdoHHY9PYlHr50ZS42OfvzE2vB4nncKQg=="
-  "resolved" "https://registry.npmjs.org/webpack/-/webpack-3.11.0.tgz"
-  "version" "3.11.0"
+"webpack@^1.9 || ^2 || ^2.1.0-beta || ^2.2.0-rc || ^3.0.0", "webpack@^3.12.0", "webpack@2 || 3 || 4":
+  "integrity" "sha512-Sw7MdIIOv/nkzPzee4o0EdvCuPmxT98+vVpIvwtcwcF1Q4SDSNp92vwcKc4REe7NItH9f1S4ra9FuQ7yuYZ8bQ=="
+  "resolved" "https://registry.npmjs.org/webpack/-/webpack-3.12.0.tgz"
+  "version" "3.12.0"
   dependencies:
     "acorn" "^5.0.0"
     "acorn-dynamic-import" "^2.0.0"
