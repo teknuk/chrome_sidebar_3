@@ -32,7 +32,7 @@ module.exports = {
       test: /\.js$/,
       loader: 'babel-loader',
       options: {
-        presets: ['react', 'es2015', 'stage-0']
+        presets: ['@babel/preset-react', '@babel/preset-env']
       },
       exclude: /node_modules/
     }]

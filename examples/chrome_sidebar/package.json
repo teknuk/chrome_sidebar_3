@@ -5,8 +5,8 @@
   "main": "dist/entry.js",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "webpack --progress --profile --colors",
-    "watch": "webpack --watch --progress --colors",
+    "build": "webpack --progress --profile",
+    "watch": "webpack --watch --progress",
     "dev": "npm run watch"
   },
   "dependencies": {
@@ -15,26 +15,26 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^7.2.3",
     "babel-generator": "6.24.0",
-    "babel-loader": "^7.1.5",
+    "babel-loader": "^8.2.3",
     "babel-plugin-module-resolver": "2.6.2",
     "babel-plugin-react-require": "3.0.0",
     "babel-plugin-transform-class-properties": "6.22.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "6.24.0",
     "babel-plugin-transform-object-rest-spread": "6.22.0",
     "babel-plugin-transform-react-jsx-source": "6.22.0",
     "babel-plugin-transform-react-remove-prop-types": "0.3.3",
     "babel-plugin-transform-runtime": "6.22.0",
-    "babel-preset-env": "^1.4.0",
     "babel-preset-latest": "6.24.0",
     "babel-preset-node6-es6": "^11.2.5",
-    "babel-preset-react": "6.23.0",
     "babel-preset-stage-0": "^6.24.1",
     "babel-runtime": "6.23.0",
     "copy-webpack-plugin": "^4.0.1",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^3.1.2"
+    "webpack": "^5.1.0",
+    "webpack-cli": "^4.9.1"
   }
 }
