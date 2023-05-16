@@ -14,10 +14,10 @@ module.exports = {
     filename: '[name].js',
   },
   plugins: [
-    new CopyWebpackPlugin([
-      { from: 'src/manifest.json' },
-      { from: 'images/**/*' }
-    ]),
+    new CopyWebpackPlugin({
+      patterns: [
+      { from: 'src/manifest.json' }
+    ]}),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('production')
