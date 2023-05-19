@@ -2,7 +2,16 @@
   "name": "Chrome Github Trending Sidebar",
   "version": "0.1.0",
   "description": "Example chrome sidebar extension to embed an iframe.",
-  "web_accessible_resources": ["entry.js"],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "entry.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
   "background": {
     "scripts": [
       "background.js"
@@ -12,10 +21,11 @@
   "browser_action": {
     "default_title": "Chrome Github Trending Sidebar"
   },
-  "manifest_version": 2,
+  "manifest_version": 3,
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "permissions": [
-    "https://*/*",
-    "http://*/*",
     "tabs",
     "webRequest",
     "webRequestBlocking"
