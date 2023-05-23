@@ -25,6 +25,8 @@
   "permissions": [
     "tabs",
     "webRequest",
-    "webRequestBlocking"
+    "webRequestBlocking",
+    "storage",
+    "scripting"
   ]
 }
