@@ -15,7 +15,7 @@ chrome.action.onClicked.addListener((tab) => {
 })
 
 attachHeadersListener({
-  webRequest: chrome.webRequest,
+  declarativeNetRequest: chrome.declarativeNetRequest,
   hosts,
   iframeHosts,
   overrideFrameOptions: true
