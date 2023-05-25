@@ -3,6 +3,7 @@ const webpack = require('webpack')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
+  mode: 'none',
   entry: {
     background: path.join(__dirname, './src/background'),
     entry: path.join(__dirname, './src/entry'),
@@ -27,10 +28,10 @@ module.exports = {
     extensions: ['.js']
   },
   module: {
-    loaders: [{
+    rules: [{
       test: /\.js$/,
       loader: 'babel-loader',
-      query: {
+      options: {
         presets: ['react', 'es2015', 'stage-0']
       },
       exclude: /node_modules/
