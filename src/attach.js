@@ -1,6 +1,6 @@
 
 export function attachHeadersListener({
-  webRequest,
+  declarativeNetRequest,
   hosts,
   iframeHosts,
   overrideFrameOptions
@@ -27,39 +27,49 @@ export function attachHeadersListener({
     types.push('sub_frame')
   }
 
-  webRequest.onHeadersReceived.addListener(details => {
-    const responseHeaders = details.responseHeaders.map(header => {
-      const isCSPHeader = /content-security-policy/i.test(header.name)
-      const isFrameHeader = /x-frame-options/i.test(header.name)
-
-      if (isCSPHeader) {
-        let csp = header.value
-
-        csp = csp.replace('script-src', `script-src ${hosts}`)
-        csp = csp.replace('style-src', `style-src ${hosts}`)
-        csp = csp.replace('frame-src', `frame-src ${iframeHosts}`)
-        csp = csp.replace('child-src', `child-src ${hosts}`)
-
-        if (overrideFrameOptions) {
-          csp = csp.replace(/frame-ancestors (.*?);/ig, '')
-        }
-
-        header.value = csp
-      } else if (isFrameHeader && overrideFrameOptions) {
-        header.value = 'ALLOWALL'
-      }
-
-      return header
-    })
-
-    return { responseHeaders }
-  }, {
-    urls: ['http://*/*', 'https://*/*'],
-    types
-  }, [
-    'blocking',
-    'responseHeaders'
-  ])
+  declarativeNetRequest.updateDynamicRules({
+    removeRuleIds: [513, 531],
+    addRules: [
+      {
+        id: 513, // Unique ID for the rule
+        priority: 1, // Rule priority
+        action: {
+          type: 'modifyHeaders',
+          responseHeaders: [
+            {
+              header: 'content-security-policy',
+              operation: 'set',
+              value: 'default-src \'self\'; script-src \'self\' ' + hosts + '; style-src \'self\' ' + hosts + '; frame-src \'self\' ' + iframeHosts + '; child-src \'self\' ' + hosts + ';',
+            },
+          ],
+        },
+        condition: {
+          urlFilter: hosts.split(' ').map(host => `*://${host}/*`).join(', '),
+          resourceTypes: ['main_frame'],
+        },
+      },
+      {
+        id: 531,
+        priority: 2,
+        action: {
+          type: 'modifyHeaders',
+          responseHeaders: [
+            {
+              header: 'content-security-policy',
+              operation: 'set',
+              value: 'default-src \'self\'; script-src \'self\' ' + hosts + '; style-src \'self\' ' + hosts + '; frame-src \'self\' ' + iframeHosts + '; child-src \'self\' ' + hosts + ';',
+            },
+          ],
+        },
+        condition: {
+          urlFilter: iframeHosts.split(' ').map(host => `*://${host}/*`).join(', '),
+          resourceTypes: ['sub_frame'],
+        },
+      },
+    ],
+  }, () => {
+    console.log('Rules updated successfully');
+  });
 }
 
 export default {
