@@ -1,6 +1,6 @@
 {
   "name": "Chrome Github Trending Sidebar",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Example chrome sidebar extension to embed an iframe.",
   "web_accessible_resources": [
     {
