@@ -1,6 +1,6 @@
 {
   "name": "chrome_sidebar_3",
-  "version": "v2_to_v3",
+  "version": "0.2.0",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
