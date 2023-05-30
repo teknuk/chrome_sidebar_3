@@ -10,7 +10,7 @@
     "dev": "npm run watch"
   },
   "dependencies": {
-    "chrome_sidebar_3": "https://github.com/teknuk/chrome_sidebar_3#manifest_v3",
+    "chrome_sidebar_3": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
