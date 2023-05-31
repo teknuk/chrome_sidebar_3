@@ -1,10 +1,10 @@
-<h1 align="center">chrome-sidebar</h1>
+<h1 align="center">chrome_sidebar_3</h1>
 <p align="center">
 <strong>Easiest way to embed an iframe as a chrome extension</strong>
 <br>
 built by <a href="https://open.segment.com">Segment</a>
 <br><br>
-<a href="https://npmjs.com/package/chrome-iframe-sheet"><img src="https://img.shields.io/npm/v/chrome-iframe-sheet.svg" /></a>
+<a href="https://www.npmjs.com/package/chrome_sidebar_3"><img src="https://img.shields.io/npm/v/chrome_sidebar_3.svg" /></a>
 </p>
 
 ## Demo
@@ -20,9 +20,9 @@ built by <a href="https://open.segment.com">Segment</a>
 ## Installation
 
 ```bash
-yarn add chrome-sidebar
+yarn add chrome_sidebar_3
 # or
-npm install --save chrome-sidebar
+npm install --save chrome_sidebar_3
 ```
 
 ### Example
@@ -30,7 +30,7 @@ npm install --save chrome-sidebar
 ```javascript
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Frame } from 'chrome-sidebar'
+import { Frame } from 'chrome_sidebar_3'
 import { url } from './settings'
 
 if (Frame.isReady()) {
@@ -53,10 +53,10 @@ function boot() {
 
 ## Getting Started
 
-Download [an example](https://github.com/segmentio/chrome-sidebar/tree/master/examples/) or [clone the repo](https://github.com/segmentio/chrome-sidebar):
+Download [an example](https://github.com/teknuk/chrome_sidebar_3/tree/manifest_v3/examples/github-trending/) or [clone the repo](https://github.com/teknuk/chrome_sidebar_3.git):
 
 ```bash
-curl https://codeload.github.com/segmentio/chrome-sidebar/tar.gz/master | tar -xz --strip=2 chrome-sidebar-master/examples/github-trending
+curl https://codeload.github.com/teknuk/chrome_sidebar_3/tar.gz/manifest_v3 | tar -xz --strip=2 chrome_sidebar_3-manifest_v3/examples/github-trending
 cd github-trending
 ```
 
