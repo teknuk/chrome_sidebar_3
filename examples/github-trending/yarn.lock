@@ -1713,10 +1713,10 @@ chrome-trace-event@^1.0.2:
   resolved "https://registry.npmjs.org/chrome-trace-event/-/chrome-trace-event-1.0.3.tgz"
   integrity sha512-p3KULyQg4S7NIHixdwbGX+nFHkoBiA4YQmyWtjb8XngSKV124nJmRysgAeujbUVb15vh+RvFUfCPqU7rXk+hZg==
 
-chrome_sidebar_3@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/chrome_sidebar_3/-/chrome_sidebar_3-0.2.0.tgz#8849f2ac0e8119c7d832e5656f2e225692a1d9e5"
-  integrity sha512-nHmgYS23uELmO/YvenCGZKTgRcahfNtKPSKYjJWkN9jpa/HgpCH6tsitlxou0mqYQ2mGrNJSjW/bHNCDgqOBHg==
+chrome_sidebar_3@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/chrome_sidebar_3/-/chrome_sidebar_3-0.2.1.tgz#fd07813186f30e56153cf7e065e281c0e7f20591"
+  integrity sha512-tfRbV0Wpwnlvm06q212og/KYoCojuWGSec7tQ8noo3TSmq+bgNiFOr7yokhzNjrL4Hh0nsjyw/kw7KayPvEsZg==
   dependencies:
     classnames "^2.2.5"
     debug "^2.6.6"
