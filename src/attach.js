@@ -1,4 +1,3 @@
-
 export function attachHeadersListener({
   declarativeNetRequest,
   hosts,
@@ -39,12 +38,12 @@ export function attachHeadersListener({
             {
               header: 'content-security-policy',
               operation: 'set',
-              value: 'default-src \'self\'; script-src \'self\' ' + hosts + '; style-src \'self\' ' + hosts + '; frame-src \'self\' ' + iframeHosts + '; child-src \'self\' ' + hosts + ';',
+              value: `default-src 'self'; script-src 'self' ${hosts}; style-src 'self' ${hosts}; frame-src 'self' ${iframeHosts}; child-src 'self' ${hosts};`,
             },
           ],
         },
         condition: {
-          urlFilter: hosts.split(' ').map(host => `*://${host}/*`).join(', '),
+          urlFilter: "http://*/*, https://*/*",
           resourceTypes: ['main_frame'],
         },
       },
@@ -57,12 +56,12 @@ export function attachHeadersListener({
             {
               header: 'content-security-policy',
               operation: 'set',
-              value: 'default-src \'self\'; script-src \'self\' ' + hosts + '; style-src \'self\' ' + hosts + '; frame-src \'self\' ' + iframeHosts + '; child-src \'self\' ' + hosts + ';',
+              value: `default-src 'self'; script-src 'self' ${hosts}; style-src 'self' ${hosts}; frame-src 'self' ${iframeHosts}; child-src 'self' ${hosts};`,
             },
           ],
         },
         condition: {
-          urlFilter: iframeHosts.split(' ').map(host => `*://${host}/*`).join(', '),
+          urlFilter: "http://*/*, https://*/*",
           resourceTypes: ['sub_frame'],
         },
       },
